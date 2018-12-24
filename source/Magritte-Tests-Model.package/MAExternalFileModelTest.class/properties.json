@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "MAFileModelTest",
-	"category" : "Magritte-Tests-Pharo-Model",
+	"category" : "Magritte-Tests-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

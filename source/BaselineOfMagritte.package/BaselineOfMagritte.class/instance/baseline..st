@@ -9,7 +9,7 @@ baseline: spec
 				
 			spec
 				package: 'Magritte-Model' with: [ spec requires: #('Grease') ];
-				package: 'Magritte-Tests-Model' with: [ spec requires: #('Magritte-Model'); includes: #('Magritte-Tests-Pharo-Model') ];
+				package: 'Magritte-Tests-Model' with: [ spec requires: #('Magritte-Model') ];
 				package: 'Magritte-Seaside' with: [ spec requires: #('Magritte-Model' 'Seaside3'); includes: #('Magritte-Pharo-Seaside') ];
 				package: 'Magritte-Bootstrap' with: [ spec requires: #('Magritte-Model') ];
 				package: 'Magritte-Deprecated' with: [ spec requires: #('Magritte-Model') ];
@@ -30,7 +30,7 @@ baseline: spec
 		for: #(#'pharo6.x')
 		do: [ spec
 				package: 'Magritte-Pharo3-Model' with: [ spec requires: #('Magritte-Model') ];
-				package: 'Magritte-Tests-Pharo-Model' with: [ spec requires: #('Magritte-Pharo3-Model') ];
+				package: 'Magritte-Tests-Model' with: [ spec requires: #('Magritte-Pharo3-Model') ];
 				package: 'Magritte-Model' with: [ spec includes: #('Magritte-Pharo3-Model') ];
 				" create a temporary alias "
 					package: 'Magritte-Pharo-Model' with: 'Magritte-Pharo3-Model' ].
@@ -38,7 +38,7 @@ baseline: spec
 		for: #(#'pharo7.x')
 		do: [ spec
 				package: 'Magritte-Pharo7-Model' with: [ spec requires: #('Magritte-Model') ];
-				package: 'Magritte-Tests-Pharo-Model' with: [ spec requires: #('Magritte-Pharo7-Model') ];
+				package: 'Magritte-Tests-Model' with: [ spec requires: #('Magritte-Pharo7-Model') ];
 				package: 'Magritte-Model' with: [ spec includes: #('Magritte-Pharo7-Model') ];
 				" create a temporary alias "
 					package: 'Magritte-Pharo-Model' with: 'Magritte-Pharo7-Model' ].
