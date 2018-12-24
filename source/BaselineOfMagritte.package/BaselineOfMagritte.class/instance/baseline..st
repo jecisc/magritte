@@ -11,14 +11,10 @@ baseline: spec
 				package: 'Magritte-Model' with: [ spec requires: #('Grease') ];
 				package: 'Magritte-Pharo-Model' with: [ spec requires: #('Magritte-Model') ];
 				package: 'Magritte-Tests-Model' with: [ spec requires: #('Magritte-Model' 'Magritte-Pharo-Model') ];
-				package: 'Magritte-Seaside'
-					with: [ spec
-						requires: #('Magritte-Model' 'Seaside3');
-						includes: #('Magritte-Pharo-Seaside') ];
+				package: 'Magritte-Seaside' with: [ spec requires: #('Magritte-Model' 'Seaside3') ];
 				package: 'Magritte-Bootstrap' with: [ spec requires: #('Magritte-Model') ];
 				package: 'Magritte-Deprecated' with: [ spec requires: #('Magritte-Model') ];
 				package: 'Magritte-Merging' with: [ spec requires: #('Magritte-Model') ];
-				package: 'Magritte-Pharo-Seaside' with: [ spec requires: #('Magritte-Seaside') ];
 				package: 'Magritte-Morph' with: [ spec requires: #('Magritte-Model') ];
 				package: 'Magritte-Pharo-Tools' with: [ spec requires: #('Magritte-Deprecated') ].
 

@@ -1,4 +1,4 @@
-*magritte-pharo-seaside-accessing
+*Magritte-Seaside
 url
 	^ self baseUrl isNil
 		ifTrue: [ super url ]
