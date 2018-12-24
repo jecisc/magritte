@@ -14,7 +14,10 @@ BaselineOfMagritte >> baseline: spec [
 				seaside3: spec.
 
 			spec
-				package: 'Magritte-Model' with: [ spec requires: #('Grease') ];
+				package: 'Magritte-Model'
+					with: [ spec
+						requires: #('Grease');
+						includes: #('Magritte-Pharo-Model') ];
 				package: 'Magritte-Pharo-Model' with: [ spec requires: #('Magritte-Model') ];
 				package: 'Magritte-Tests-Model' with: [ spec requires: #('Magritte-Model' 'Magritte-Pharo-Model') ];
 				package: 'Magritte-Seaside' with: [ spec requires: #('Magritte-Model' 'Seaside3') ];
