@@ -1,3 +1,0 @@
-*Magritte-GT
-glmDefaultPresentation
-	^ #text
