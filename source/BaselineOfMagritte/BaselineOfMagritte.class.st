@@ -42,7 +42,7 @@ BaselineOfMagritte >> grease: spec [
 	spec
 		baseline: 'Grease'
 		with:
-			[ spec repository: 'github://SeasideSt/Grease:1.4.x/repository' ]
+			[ spec repository: 'github://SeasideSt/Grease:v1.4.x/repository' ]
 ]
 
 { #category : #baselines }
