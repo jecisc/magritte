@@ -52,6 +52,6 @@ BaselineOfMagritte >> seaside3: spec [
 		with:
 			[ "note: we do not want to depend on Zinc, since this is not present in Squeak. Currently no adapter is loaded"
 			spec
-				repository: 'github://SeasideSt/Seaside/repository';
+				repository: 'github://SeasideSt/Seaside:v3.4.x/repository';
 				loads: #('Core') ]
 ]
